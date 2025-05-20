@@ -9,6 +9,7 @@ body {
   border-right: 1px solid #ddd;
   background: #fff;
   padding-top: 10px;
+  transition: 0.5s;
 }
 
 ul.menu {
@@ -60,7 +61,25 @@ ul.menu {
   color: #555;
 }
 
+.svag {
+  transform: translateX(-250px);
+}
 
-.svag{
-  
+.hero-div {
+  display: flex;
+  gap: 12px;
+}
+
+.cbs-news-p {
+  font-size: 14px;
+  color: #606060;
+  margin-top: 4px;
+}
+
+.hero-ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
