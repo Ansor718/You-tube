@@ -1,0 +1,45 @@
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo_block img {
+  cursor: pointer;
+}
+
+.search_input {
+  width: 540px;
+  padding: 10px;
+  border-radius: 20px 1px 1px 20px;
+}
+.search_container {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  width: 64px;
+  height: 39px;
+  border-radius: 1px 20px 20px 1px;
+  border-left: none;
+  cursor: pointer;
+}
+
+.search_container img {
+  cursor: pointer;
+}
+
+.header_signup {
+  display: flex;
+  align-items: center;
+}
+
+.header_signup img {
+  cursor: pointer;
+}
