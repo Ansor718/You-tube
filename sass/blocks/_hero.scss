@@ -59,3 +59,15 @@ ul.menu {
   font-weight: bold;
   color: #555;
 }
+
+
+.hero {
+  display: flex;
+}
+
+.hero__right-menu {
+  display: flex;
+  gap: 12px;
+  font-size: 14px;
+  list-style: none;
+}
