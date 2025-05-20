@@ -1,0 +1,17 @@
+.header_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search_input {
+  width: 25%;
+  padding: 10px;
+  border-radius: 20px;
+}
