@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><img src="" alt=""> You tube</title>
+    <title> You tube</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -135,24 +135,35 @@
       </div>
       <!-- sham pasi senga -->
       <div class="hero_right">
-        <ul class="hero__right-menu">
-          <li class="hero__right-list">All</li>
-          <li class="hero__right-list">Music</li>
-          <li class="hero__right-list">News</li>
-          <li class="hero__right-list">Chill-out music</li>
-          <li class="hero__right-list">Gaming</li>
-          <li class="hero__right-list">Live</li>
-          <li class="hero__right-list">Meditation music</li>
-          <li class="hero__right-list">Inventions</li>
-          <li class="hero__right-list">Game shows</li>
-          <li class="hero__right-list">Comedy</li>
-          <li class="hero__right-list">Trucks</li>
-          <li class="hero__right-list">Deep House</li>
-          <button class="hero__right-btn">
-            <img src="./assets/Auto Layout Horizontal.svg" alt="">
-          </button>
-        </ul>
+        <div class="hero__right-wrapper">
+           <button class="scroll-btn__left" onclick="scrollRight()">&#8250;</button>
+  <ul class="hero__right-menu" id="scrollMenu">
+    <li class="hero__right-list">All</li>
+    <li class="hero__right-list">Music</li>
+    <li class="hero__right-list">News</li>
+    <li class="hero__right-list">Chill-out music</li>
+    <li class="hero__right-list">Gaming</li>
+    <li class="hero__right-list">Live</li>
+    <li class="hero__right-list">Meditation music</li>
+    <li class="hero__right-list">Inventions</li>
+    <li class="hero__right-list">Game shows</li>
+    <li class="hero__right-list">Comedy</li>
+    <li class="hero__right-list">Trucks</li>
+    <li class="hero__right-list">Deep House</li>
+  </ul>
+
+  <!-- O‘NG SCROLL TUGMASI -->
+  <button class="scroll-btn" onclick="scrollRight()">&#8250;</button>
+</div>
       </div>
     </section>
+
+
+    <script>
+  function scrollRight() {
+    const menu = document.getElementById('scrollMenu');
+    menu.scrollBy({ left: 200, behavior: 'smooth' });
+  }
+</script>
   </body>
 </html>
