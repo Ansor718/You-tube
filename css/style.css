@@ -87,12 +87,6 @@
     transform: translateY(10px);
   }
 }
-#email {
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
 body {
   font-family: Roboto, Arial, sans-serif;
 }
