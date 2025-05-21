@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< HEAD
     <title>You tube</title>
-=======
-    <title> You tube</title>
->>>>>>> 63c22d18567664448ec4b45f79cafd68075b8288
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -29,18 +25,12 @@
             </button>
             <img src="./assets/Frame (3).svg" alt="" />
           </div>
-          <div class="modal">
-            <div class="modal_content">
-              
-              <span class="close">X</span>
-            </div>
-          </div>
           <div class="header_signup">
             <div class="param"><img src="./assets/Frame (4).svg" alt="" /></div>
             <div class="sign">
               <img
                 class="login"
-                src="./assets/Auto Layout Horizontal.svg"
+                src="./assets/Auto Layout Horizontal (1).svg"
                 alt=""
               />
             </div>
@@ -147,7 +137,30 @@
           </div>
         </div>
       </div>
+      <!-- sham pasi senga -->
       <div class="hero_right">
+        <div class="hero__right-wrapper">
+          <button class="scroll-btn__left" onclick="scrollRight()">
+            &#8250;
+          </button>
+          <ul class="hero__right-menu" id="scrollMenu">
+            <li class="hero__right-list">All</li>
+            <li class="hero__right-list">Music</li>
+            <li class="hero__right-list">News</li>
+            <li class="hero__right-list">Chill-out music</li>
+            <li class="hero__right-list">Gaming</li>
+            <li class="hero__right-list">Live</li>
+            <li class="hero__right-list">Meditation music</li>
+            <li class="hero__right-list">Inventions</li>
+            <li class="hero__right-list">Game shows</li>
+            <li class="hero__right-list">Comedy</li>
+            <li class="hero__right-list">Trucks</li>
+            <li class="hero__right-list">Inventions</li>
+            <li class="hero__right-list">Inventions</li>
+          </ul>
+          <!-- O‘NG SCROLL TUGMASI -->
+          <button class="scroll-btn" onclick="scrollRight()">&#8250;</button>
+        </div>
         <ul class="hero-ul">
           <li class="hero-li">
             <img src="./assets/Frame (5).svg" alt="" />
@@ -407,38 +420,13 @@
         </ul>
       </div>
     </section>
-    <script src="./js/app.js"></script>
-      <!-- sham pasi senga -->
-      <div class="hero_right">
-        <div class="hero__right-wrapper">
-           <button class="scroll-btn__left" onclick="scrollRight()">&#8250;</button>
-  <ul class="hero__right-menu" id="scrollMenu">
-    <li class="hero__right-list">All</li>
-    <li class="hero__right-list">Music</li>
-    <li class="hero__right-list">News</li>
-    <li class="hero__right-list">Chill-out music</li>
-    <li class="hero__right-list">Gaming</li>
-    <li class="hero__right-list">Live</li>
-    <li class="hero__right-list">Meditation music</li>
-    <li class="hero__right-list">Inventions</li>
-    <li class="hero__right-list">Game shows</li>
-    <li class="hero__right-list">Comedy</li>
-    <li class="hero__right-list">Trucks</li>
-    <li class="hero__right-list">Deep House</li>
-  </ul>
-
-  <!-- O‘NG SCROLL TUGMASI -->
-  <button class="scroll-btn" onclick="scrollRight()">&#8250;</button>
-</div>
-      </div>
-    </section>
-
 
     <script>
-  function scrollRight() {
-    const menu = document.getElementById('scrollMenu');
-    menu.scrollBy({ left: 200, behavior: 'smooth' });
-  }
-</script>
+      function scrollRight() {
+        const menu = document.getElementById("scrollMenu");
+        menu.scrollBy({ left: 200, behavior: "smooth" });
+      }
+    </script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

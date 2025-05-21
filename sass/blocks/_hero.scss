@@ -9,7 +9,6 @@ body {
 .sidebar {
   width: 240px;
   height: 100vh;
-  border-right: 1px solid #ddd;
   background: #fff;
   padding-top: 10px;
   transition: 0.5s;
@@ -116,13 +115,17 @@ ul.menu {
   background-color: whitesmoke;
   border-radius: 10px;
 }
+.hero__right-list:active {
+  background-color: black;
+  color: white;
+}
 
 .hero__right-wrapper {
+  margin-top: 10px;
   position: relative;
   overflow: hidden;
-  border: 1px solid #ccc;
   padding: 10px;
-  max-width: 988px;
+  max-width: 100%;
 }
 
 .hero__right-menu {
