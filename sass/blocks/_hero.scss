@@ -2,10 +2,13 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
+.hero {
+  display: flex;
+}
+
 .sidebar {
   width: 240px;
   height: 100vh;
-  overflow-y: auto;
   border-right: 1px solid #ddd;
   background: #fff;
   padding-top: 10px;
@@ -82,4 +85,17 @@ ul.menu {
   gap: 16px;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.hero-new-attack-h4 {
+  margin: 4px;
+  margin-left: 0;
+}
+
+.hero-ul {
+  transition: 0.5s;
+}
+
+.goss {
+  transform: translate(-144px, 0);
 }
