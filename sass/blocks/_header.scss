@@ -43,3 +43,13 @@
 .header_signup img {
   cursor: pointer;
 }
+
+@keyframes modal {
+  from {
+    transform: translateY(-100px);
+  }
+
+  to {
+    transform: translateY(10px);
+  }
+}
