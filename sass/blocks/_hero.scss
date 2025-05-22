@@ -10,6 +10,7 @@ body {
   width: 240px;
   height: 100vh;
   background: #fff;
+  overflow: auto;
   padding-top: 10px;
   transition: 0.5s;
 }
@@ -25,7 +26,7 @@ ul.menu {
   align-items: center;
   padding: 10px 24px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s
 }
 
 .menu li:hover {

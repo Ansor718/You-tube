@@ -46,12 +46,43 @@
   cursor: pointer;
 }
 
+.imgs1 {
+  display: none;
+}
+
+.btn {
+  display: block;
+}
+
 @keyframes modal {
   from {
     transform: translateY(-100px);
   }
   to {
     transform: translateY(10px);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .header_logo {
+    max-width: 600px;
+  }
+  .header__img {
+    margin-left: px;
+  }
+  .search_input {
+    display: none;
+    max-width: 250px;
+    margin-left: 80px;
+  }
+  .btn {
+    display: none;
+    margin-left: 20px;
+  }
+  .imgs1 {
+    display: block;
+  }
+  .img__voice {
+    display: none;
   }
 }
 body {
@@ -66,6 +97,7 @@ body {
   width: 240px;
   height: 100vh;
   background: #fff;
+  overflow: auto;
   padding-top: 10px;
   transition: 0.5s;
 }
