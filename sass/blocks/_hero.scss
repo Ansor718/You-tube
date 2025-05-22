@@ -10,6 +10,7 @@ body {
   width: 240px;
   height: 100vh;
   background: #fff;
+  overflow: auto;
   padding-top: 10px;
   transition: 0.5s;
 }
@@ -66,6 +67,9 @@ ul.menu {
 .svag {
   transform: translateX(-250px);
 }
+.hero-div img {
+  border-radius: 50%;
+}
 
 .hero-div {
   display: flex;
@@ -81,7 +85,6 @@ ul.menu {
 .hero-ul {
   list-style: none;
   display: flex;
-  gap: 16px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -91,7 +94,7 @@ ul.menu {
   margin-left: 0;
 }
 
-.hero-ul {
+.hero-ul img {
   transition: 0.5s;
 }
 

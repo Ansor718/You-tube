@@ -11,18 +11,31 @@ elMenyu.addEventListener("click", function () {
   heroUl.classList.toggle("goss");
 });
 
-login.addEventListener("click", function () {});
+function youTube(arr) {
+  arr.forEach((el) => {
+    heroUl.insertAdjacentHTML(
+      "beforeend",
+      `
+      <li class="hero-li">
+        <a href="./detail.html?id=${el.id}"><img style="border-radius: 20px" width="400px" src="${el.thumbnail}" alt="" /></a>
 
-login.onclick = function () {
-  modal.style.display = "block";
-};
+        <div class="hero-div">  
+          <div>
+            <img src="${el.channelPhoto}" alt="" />
+          </div>
 
-elClose.onclick = function () {
-  modal.style.display = "none";
-};
+          <div>
+            <h4 class="hero-new-attack-h4">
+              New attack targets U.S. base in Syria <br />
+              following American airstrikes over
+            </h4>
+            <p class="cbs-news-p">CBS New <br />126K views • 2 hours ago</p>
+          </div>
+        </div>
+      </li>
+    `
+    );
+  });
+}
 
-window.onclick = function (e) {
-  if (e.target === modal || e.target === elClose) {
-    modal.style.display = "none";
-  }
-};
+youTube(videoData);
