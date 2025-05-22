@@ -59,7 +59,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 
-.hero {
+.video {
   display: flex;
 }
 
@@ -446,4 +446,71 @@ ul.menu {
 
 body {
   font-family: "Roboto", sans-serif;
+}
+
+.relased-wrapper {
+  width: 1144px;
+  height: 398px;
+  background-color: #e9e9e9;
+  border-radius: 8px;
+}
+
+.logo-featured-div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.released-h2 {
+  font-size: 23px;
+  margin-top: 9px;
+}
+
+.relased-cap {
+  margin-left: 16px;
+}
+
+.discoverr-text {
+  font-size: 18px;
+  margin-top: 12px;
+}
+
+.relased-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+  gap: 16px;
+}
+
+.relased-li {
+  list-style: none;
+}
+
+.relased-ul {
+  display: flex;
+  gap: 16px;
+}
+
+.mtt {
+  margin-top: 12px;
+}
+
+.ed-sheeran {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #606060;
+  font-weight: 400;
+}
+
+.show-more-btn {
+  width: 320px;
+  height: 36px;
+  background-color: transparent;
+  border-radius: 18px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
