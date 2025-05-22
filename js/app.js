@@ -17,23 +17,41 @@ function youTube(arr) {
       "beforeend",
       `
       <li class="hero-li">
-        <a href="./detail.html?id=${el.id}"><img style="border-radius: 20px" width="400px" src="${el.thumbnail}" alt="" /></a>
+        <a href="./detail.html?id=${el.id}"><img style="border-radius: 20px" width="390px" src="${el.thumbnail}" alt="" /></a>
 
         <div class="hero-div">  
           <div>
-            <img src="${el.channelPhoto}" alt="" />
+            <img height="36px" width="36px" src="${el.channelPhoto}" alt="" />
           </div>
 
           <div>
-            <h4 class="hero-new-attack-h4">
+            <h4 class="hero-new-attack-h4" style="width: 281px;">
               ${el.title}<br />
             </h4>
-            <p class="cbs-news-p">${el.channel} <br />${el.views}${el.uploaded}</p>
+            <p class="cbs-news-p">${el.channel} <br />${el.views}  ${el.uploaded}</p>
           </div>
         </div>
       </li>
     `
     );
+  });
+
+  const searchInput = document.querySelector(".search_input");
+
+  searchInput.addEventListener("input", function () {
+    const searchText = this.value.toLowerCase();
+    const heroLI = document.querySelectorAll(".hero-li");
+
+    heroLI.forEach((film) => {
+      const videoTitle = film
+        .querySelector(".hero-new-attack-h4")
+        .textContent.toLowerCase();
+      if (videoTitle.includes(searchText)) {
+        film.style.display = "block";
+      } else {
+        film.style.display = "none";
+      }
+    });
   });
 }
 
