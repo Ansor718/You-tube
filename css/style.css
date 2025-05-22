@@ -155,6 +155,10 @@ ul.menu {
   transform: translateX(-250px);
 }
 
+.hero-div img {
+  border-radius: 50%;
+}
+
 .hero-div {
   display: flex;
   gap: 12px;
@@ -169,7 +173,6 @@ ul.menu {
 .hero-ul {
   list-style: none;
   display: flex;
-  gap: 16px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -179,7 +182,7 @@ ul.menu {
   margin-left: 0;
 }
 
-.hero-ul {
+.hero-ul img {
   transition: 0.5s;
 }
 
@@ -241,12 +244,15 @@ ul.menu {
 
 /* SCROLLBAR YASHIRISH */
 .hero__right-menu {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE */
 }
 
 .hero__right-menu::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
 
 /* SCROLL BUTTON STYLE */
@@ -292,4 +298,32 @@ ul.menu {
 
 .scroll-btn__left:hover {
   background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 360px) {
+  .hero__right-menu {
+    width: 310px;
+    overflow: scroll;
+    margin-left: -5px;
+  }
+  .sidebar {
+    position: absolute;
+    top: 90px;
+    left: 0;
+  }
+  .goss {
+    transform: translate(0, 0);
+  }
+  .hero-ul {
+    margin-left: -30px;
+  }
+  .hero__img {
+    width: 320px;
+  }
+  .hero__profile-img {
+    width: 50px;
+  }
+  .hero-new-attack-h4 {
+    font-size: 14.5px;
+  }
 }/*# sourceMappingURL=style.css.map */
