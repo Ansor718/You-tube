@@ -26,10 +26,9 @@ function youTube(arr) {
 
           <div>
             <h4 class="hero-new-attack-h4">
-              New attack targets U.S. base in Syria <br />
-              following American airstrikes over
+              ${el.title}<br />
             </h4>
-            <p class="cbs-news-p">CBS New <br />126K views • 2 hours ago</p>
+            <p class="cbs-news-p">${el.channel} <br />${el.views}${el.uploaded}</p>
           </div>
         </div>
       </li>
