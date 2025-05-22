@@ -17,11 +17,11 @@ function youTube(arr) {
       "beforeend",
       `
       <li class="hero-li">
-        <a href="./detail.html?id=${el.id}"><img style="border-radius: 20px" width="390px" src="${el.thumbnail}" alt="" /></a>
+        <a href="./detail.html?id=${el.id}"><img class="hero__img" style="border-radius: 20px" width="400px" src="${el.thumbnail}" alt="" /></a>
 
         <div class="hero-div">  
           <div>
-            <img height="36px" width="36px" src="${el.channelPhoto}" alt="" />
+            <img class="imghero" class="hero__profile-img" src="${el.channelPhoto}" alt="" />
           </div>
 
           <div>

@@ -47,12 +47,43 @@
   cursor: pointer;
 }
 
+.imgs1 {
+  display: none;
+}
+
+.btn {
+  display: block;
+}
+
 @keyframes modal {
   from {
     transform: translateY(-100px);
   }
   to {
     transform: translateY(10px);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .header_logo {
+    max-width: 600px;
+  }
+  .header__img {
+    margin-left: px;
+  }
+  .search_input {
+    display: none;
+    max-width: 250px;
+    margin-left: 80px;
+  }
+  .btn {
+    display: none;
+    margin-left: 20px;
+  }
+  .imgs1 {
+    display: block;
+  }
+  .img__voice {
+    display: none;
   }
 }
 body {
@@ -223,12 +254,15 @@ ul.menu {
 
 /* SCROLLBAR YASHIRISH */
 .hero__right-menu {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE */
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE */
 }
 
 .hero__right-menu::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
 
 /* SCROLL BUTTON STYLE */
@@ -276,6 +310,33 @@ ul.menu {
   background-color: #f0f0f0;
 }
 
+@media only screen and (max-width: 360px) {
+  .hero__right-menu {
+    width: 310px;
+    overflow: scroll;
+    margin-left: -5px;
+  }
+  .sidebar {
+    position: absolute;
+    top: 90px;
+    left: 0;
+  }
+  .goss {
+    transform: translate(0, 0);
+  }
+  .hero-ul {
+    margin-left: 10px;
+  }
+  .hero__img {
+    width: 320px;
+  }
+  .hero__profile-img {
+    width: 50px;
+  }
+  .hero-new-attack-h4 {
+    font-size: 14.5px;
+  }
+}
 * {
   margin: 0;
 }
