@@ -2,9 +2,10 @@
   margin: 0;
 }
 
+.hero-li {
+}
+
 .video_left {
-  margin-left: 24px;
-  margin-top: 24px;
 }
 
 .smartphonee-text {
@@ -52,12 +53,17 @@
   cursor: pointer;
 }
 
+.hero-ul {
+  list-style: none;
+}
+
 .btns-div {
   margin-left: 12px;
 }
 
 .video_see-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .like.active {
@@ -145,7 +151,7 @@
 
 .shop-the-ul {
   display: flex;
-  margin-left: -35px;
+  justify-content: space-between;
 }
 
 .core-text {
