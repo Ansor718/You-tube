@@ -1,268 +1,273 @@
-*{
-    margin: 0;
-
+* {
+  margin: 0;
 }
 
-.video_left{
-    margin-left: 24px;
-    margin-top: 24px;
+.video_left {
+  margin-left: 24px;
+  margin-top: 24px;
 }
 
-.smartphonee-text{
-    font-size: 18px;
-    margin-bottom: 8px;
-    margin-top: 12px;
+.smartphonee-text {
+  font-size: 18px;
+  margin-bottom: 8px;
+  margin-top: 12px;
 }
 
-.marquess-profile_div{
-    display: flex;
-    gap: 12px;
-    align-items: center;
+.marquess-profile_div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
-.subscribers-16-mln{
-    margin-top: 1px;
-    color: #606060;
-    font-size: 12px;
+.subscribers-16-mln {
+  margin-top: 1px;
+  color: #606060;
+  font-size: 12px;
 }
 
-.marques-profile-name{
-    margin-bottom: 1px;
-    align-items: center;
+.marques-profile-name {
+  margin-bottom: 1px;
+  align-items: center;
 }
 
-.join-btn{
-    width: 60px;
-    height: 36px;
-    border-radius: 18px;
-    background-color: #0000000D;
-    border-color: #0000000D;
-    font-weight: 500;
+.join-btn {
+  width: 60px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #0000000d;
+  border-color: #0000000d;
+  font-weight: 500;
 }
 
-.subscribe-btn{
-    width: 95px;
-    height: 36px;
-    border-radius: 18px;
-    background-color: #0F0F0F;
-    color: white;
-    font-weight: 500;
+.subscribe-btn {
+  width: 95px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #0f0f0f;
+  color: white;
+  font-weight: 500;
 }
 
-.btns-div{
-    margin-left: 12px;
+.like {
+  cursor: pointer;
 }
 
-.like-btn{
-    display: flex;
-    align-items: center;
-    width: 141px;
-    height: 36px;
-    border-radius: 120px;
-    padding: 13px;
-    gap: 10px;
-    border: none;
+.btns-div {
+  margin-left: 12px;
 }
 
-.like-hr{
-    width: 1px;
-    height: 24px;
+.like.active {
+  background-color: #0f0f0f;
 }
 
-.like-share-save-btns-div{
-    margin-left: 195px;
-    display: flex;
-    gap: 8px;
+.like-btn {
+  display: flex;
+  align-items: center;
+  width: 141px;
+  height: 36px;
+  border-radius: 120px;
+  padding: 13px;
+  gap: 10px;
+  border: none;
 }
 
-.share-btn{
-    display: flex;
-    align-items: center;
-    width: 92px;
-    height: 36px;
-    text-align: center;
-    border-radius: 120px;
-    border: none;
+.like-hr {
+  width: 1px;
+  height: 24px;
 }
 
-.share-img{
-    margin-left: 10px;
-    margin-right: 6px;
+.like-share-save-btns-div {
+  margin-left: 195px;
+  display: flex;
+  gap: 8px;
 }
 
-.more-btn-nuqta{
-    border-radius: 180px;
-    border: none;
-    justify-content: center;
-    align-items: center;
+.share-btn {
+  display: flex;
+  align-items: center;
+  width: 92px;
+  height: 36px;
+  text-align: center;
+  border-radius: 120px;
+  border: none;
 }
 
-.more-settings-icon{
-    margin-bottom: 2px;
+.share-img {
+  margin-left: 10px;
+  margin-right: 6px;
 }
 
-.views-div{
-    width: 966px;
-    height: 104px;
-    background-color: #0000000D;
-    border-radius: 12px;
-    margin-top: 12px;
-    padding: 12px 0px 1px 12px;
+.more-btn-nuqta {
+  border-radius: 180px;
+  border: none;
+  justify-content: center;
+  align-items: center;
 }
 
-.views-p{
-    font-size: 14px;
-    color: #0F0F0F;
-    font-weight: 500;
+.more-settings-icon {
+  margin-bottom: 2px;
 }
 
-.the-best-p{
-    margin-top: 1px;
+.views-div {
+  width: 966px;
+  height: 104px;
+  background-color: #0000000d;
+  border-radius: 12px;
+  margin-top: 12px;
+  padding: 12px 0px 1px 12px;
 }
 
-.qalin-span{
-    font-weight: 500;
-    line-height: 20px;
-    margin-bottom: 12px;
+.views-p {
+  font-size: 14px;
+  color: #0f0f0f;
+  font-weight: 500;
 }
 
-.shop-the{
-    margin-top: 26px;
-    font-weight: 500;
-    line-height: 20px;
+.the-best-p {
+  margin-top: 1px;
 }
 
-.shop-the-ul{
-    display: flex;
-    margin-left: -35px;
+.qalin-span {
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 12px;
 }
 
-.core-text{
-
+.shop-the {
+  margin-top: 26px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
-.shop-the-li{
-    display: flex;
-    gap: 10px;
+.shop-the-ul {
+  display: flex;
+  margin-left: -35px;
 }
 
-.shop-the-ul{
-    margin-top: 15px;
-    gap: 15px;
+.core-text {
 }
 
-.shop-the-dollars{
-    font-weight: 500;
-    margin-top: 2px;
+.shop-the-li {
+  display: flex;
+  gap: 10px;
 }
 
-.mkbhd{
-    margin-top: 6px;
-    color: #606060;
-
+.shop-the-ul {
+  margin-top: 15px;
+  gap: 15px;
 }
 
-.d-flex{
-    display: flex;
-    align-items: center;
-    gap: 2px;
+.shop-the-dollars {
+  font-weight: 500;
+  margin-top: 2px;
 }
 
-.new-window-icon{
-    margin-top: 7px;
+.mkbhd {
+  margin-top: 6px;
+  color: #606060;
 }
 
-.shop-the-hr{
-    margin-bottom: 24px;
-    width: 966px;
-    margin-top: 12px;
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
-.coments-sort-by-div{
-    display: flex;
-    gap: 8px;
-    margin-bottom: 24px;
+.new-window-icon {
+  margin-top: 7px;
 }
 
-.sort-image-icon{
-    margin-left: 23px;
+.shop-the-hr {
+  margin-bottom: 24px;
+  width: 966px;
+  margin-top: 12px;
 }
 
-.user-coment-input{
-    width: 894px;
-    height: 20px;
-    border: none;
+.coments-sort-by-div {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
-.profile-comet-div{
-    display: flex;
-    gap: 16px;
+.sort-image-icon {
+  margin-left: 23px;
 }
 
-.add-coment-hr{
-    width: 920px;
+.user-coment-input {
+  width: 894px;
+  height: 20px;
+  border: none;
 }
 
-.coments-ul{
-    list-style: none;
-    padding: 0px;
-    margin-top: 32px;
+.profile-comet-div {
+  display: flex;
+  gap: 16px;
 }
 
-.coments-li{
-    display: flex;
-    gap: 16px;
+.add-coment-hr {
+  width: 920px;
 }
 
-.months-ago-2{
-    font-weight: 400;
-    color: #606060;
+.coments-ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 32px;
 }
 
-.josep-wards-profile-name{
-    font-size: 13px;
-    font-weight: 500;
+.coments-li {
+  display: flex;
+  gap: 16px;
 }
 
-.profile-text{
-    color: #0F0F0F;
-    font-size: 14px;
-    margin-top: 2px;
+.months-ago-2 {
+  font-weight: 400;
+  color: #606060;
 }
 
-.likes-reply-div{
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    margin-top: 14px;
-    margin-bottom: 20px;
+.josep-wards-profile-name {
+  font-size: 13px;
+  font-weight: 500;
 }
 
-.profile-text{
-    margin-top: 5px;
+.profile-text {
+  color: #0f0f0f;
+  font-size: 14px;
+  margin-top: 2px;
 }
 
-.k26{
-    font-size: 12px;
-    color: #606060;
-    margin-top: 3px;
+.likes-reply-div {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 14px;
+  margin-bottom: 20px;
 }
 
-.reply-text{
-    font-size: 12px;
-    color: #0F0F0F;
-    font-weight: 500;
-    text-decoration: none;
+.profile-text {
+  margin-top: 5px;
 }
 
-.replies-92{
-    text-decoration: none;
-    color: #065FD4;
+.k26 {
+  font-size: 12px;
+  color: #606060;
+  margin-top: 3px;
 }
 
-.reply-icons{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 16px;
+.reply-text {
+  font-size: 12px;
+  color: #0f0f0f;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.replies-92 {
+  text-decoration: none;
+  color: #065fd4;
+}
+
+.reply-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 16px;
 }

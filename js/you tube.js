@@ -263,4 +263,17 @@ let videoData = [
     category: "News",
     src: "https://youtu.be/WVyLsOq7MMs",
   },
+  {
+    id: 20,
+    title: "Trump's budget bill is closer to becoming law",
+    channel: "LIVEKENS 5: Your San Antonio News Source",
+    channelPhoto:
+      "https://yt3.googleusercontent.com/nERF4CPBVvkdmqaq2pq3Wv-VqDLcf1MjtTJRjmmgijjWhsSvcclERaT7YdslqBOIWh1HWRchoA=s160-c-k-c0x00ffffff-no-rj",
+    views: "387K",
+    uploaded: "1 yil oldin",
+    duration: "0:28",
+    thumbnail: "thumbnails/new.jpg",
+    category: "News",
+    src: "https://youtu.be/WVyLsOq7MMs",
+  },
 ];
