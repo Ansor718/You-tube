@@ -14,27 +14,12 @@ videoHTML.innerHTML = `
 
 let rightVideo = document.querySelector(".hero-ul");
 
-rightVideo.innerHTML = `
-  <li class="hero-li">
-                  <img src="./assets/Frame (5).svg" alt="" />
-
-                  <div class="hero-div">
-                    <div>
-                      <img src="./assets/Image.svg" alt="" />
-                    </div>
-
-                    <div>
-                      <h4 class="hero-new-attack-h4">
-                        New attack targets U.S. base in Syria <br />
-                        following American airstrikes over
-                      </h4>
-                      <p class="cbs-news-p">
-                        CBS New <br />126K views • 2 hours ago
-                      </p>
-                    </div>
-                  </div>
-                </li>
-`;
+rightVideo.insertAdjacentHTML(
+  "beforeend",
+  `
+    
+  `
+);
 
 let like = document.querySelector(".like");
 
