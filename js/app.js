@@ -11,18 +11,77 @@ elMenyu.addEventListener("click", function () {
   heroUl.classList.toggle("goss");
 });
 
-login.addEventListener("click", function () {});
+function youTube(arr) {
+  arr.forEach((el) => {
+    heroUl.insertAdjacentHTML(
+      "beforeend",
+      `
+      <li class="hero-li">
+        <a href="./detail.html?id=${el.id}"><img class="hero__img" style="border-radius: 20px" width="400px" src="${el.thumbnail}" alt="" /></a>
 
-login.onclick = function () {
-  modal.style.display = "block";
-};
+        <div class="hero-div">  
+          <div class="vd">
+            <img class="imghero" class="hero__profile-img" src="${el.channelPhoto}" alt="" />
+          </div>
 
-elClose.onclick = function () {
-  modal.style.display = "none";
-};
+          <div>
+            <h4 class="hero-new-attack-h4" style="width: 281px;">
+              ${el.title}<br />
+            </h4>
+            <p class="cbs-news-p">${el.channel} <br />${el.views}  ${el.uploaded}</p>
+          </div>
+        </div>
+      </li>
+    `
+    );
+  });
 
-window.onclick = function (e) {
-  if (e.target === modal || e.target === elClose) {
-    modal.style.display = "none";
-  }
+  const searchInput = document.querySelector(".search_input");
+
+  searchInput.addEventListener("input", function () {
+    const searchText = this.value.toLowerCase();
+    const heroLI = document.querySelectorAll(".hero-li");
+
+    heroLI.forEach((film) => {
+      const videoTitle = film
+        .querySelector(".hero-new-attack-h4")
+        .textContent.toLowerCase();
+      if (videoTitle.includes(searchText)) {
+        film.style.display = "block";
+      } else {
+        film.style.display = "none";
+      }
+    });
+  });
+}
+
+youTube(videoData);
+
+function filteredVideo() {
+  let radioValues = [...allRadios]
+    .filter((radio) => radio.checked)
+    .map((el) => el.value);
+
+  let checkboxvalues = [...allCheckboxes]
+    .filter((checkbox) => checkbox.checked)
+    .map((el) => el.value);
+
+  let filteredByProduct = products.filter(function (product) {
+    return (
+      product.color === radioValues[0] ||
+      checkboxvalues.some((mat) => product.materials.includes(mat))
+    );
+  });
+
+  displayProduct(filteredVideo);
+}
+
+const elModal = document.getElementById("signInModal");
+const openBtn = document.querySelector(".login");
+const closeBtn = document.getElementById("closeModal");
+
+openBtn.onclick = () => (elModal.style.display = "block");
+closeBtn.onclick = () => (elModal.style.display = "none");
+window.onclick = (event) => {
+  if (event.target === elModal) elModal.style.display = "none";
 };
