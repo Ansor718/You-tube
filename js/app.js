@@ -57,25 +57,3 @@ function youTube(arr) {
 
 youTube(videoData);
 
-
-let 
-
-
-function filteredVideo() {
-  let radioValues = [...allRadios]
-    .filter((radio) => radio.checked)
-    .map((el) => el.value);
-
-  let checkboxvalues = [...allCheckboxes]
-    .filter((checkbox) => checkbox.checked)
-    .map((el) => el.value);
-
-  let filteredByProduct = products.filter(function (product) {
-    return (
-      product.color === radioValues[0] ||
-      checkboxvalues.some((mat) => product.materials.includes(mat))
-    );
-  });
-
-  displayProduct(filteredVideo);
-}
