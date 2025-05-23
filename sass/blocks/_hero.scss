@@ -75,6 +75,7 @@ ul.menu {
 .hero-div {
   display: flex;
   gap: 12px;
+  padding: 10px;
 }
 
 .cbs-news-p {
@@ -89,6 +90,7 @@ ul.menu {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 6px;
+  gap: 10px;
 }
 
 .hero-new-attack-h4 {
@@ -110,6 +112,12 @@ ul.menu {
 
 .hero {
   display: flex;
+}
+
+.hero-li:hover {
+  background-color: #8e8e8e;
+  border-radius: 20px;
+  transition: 0.5s;
 }
 
 .hero__right-menu {
