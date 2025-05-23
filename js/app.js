@@ -57,10 +57,6 @@ function youTube(arr) {
 
 youTube(videoData);
 
-
-let 
-
-
 function filteredVideo() {
   let radioValues = [...allRadios]
     .filter((radio) => radio.checked)
@@ -79,3 +75,13 @@ function filteredVideo() {
 
   displayProduct(filteredVideo);
 }
+
+const elModal = document.getElementById("signInModal");
+const openBtn = document.querySelector(".login");
+const closeBtn = document.getElementById("closeModal");
+
+openBtn.onclick = () => (elModal.style.display = "block");
+closeBtn.onclick = () => (elModal.style.display = "none");
+window.onclick = (event) => {
+  if (event.target === elModal) elModal.style.display = "none";
+};

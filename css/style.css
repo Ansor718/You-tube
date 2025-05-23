@@ -55,6 +55,53 @@
   display: block;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scaleY(20px);
+}
+
+.modal-content {
+  background-color: antiquewhite;
+  margin: 10% auto;
+  padding: 80px;
+  border-radius: 8px;
+  width: 436px;
+  animation: scaleIn 0.3s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.modal-content input {
+  width: 276px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 @keyframes modal {
   from {
     transform: translateY(-100px);
@@ -74,6 +121,16 @@
     display: none;
     max-width: 250px;
     margin-left: 80px;
+  }
+  .modal-content {
+    background-color: antiquewhite;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+  }
+  .modal-content input {
+    width: 259px;
   }
   .btn {
     display: none;
@@ -387,13 +444,21 @@ ul.menu {
   width: 95px;
   height: 36px;
   border-radius: 18px;
-  background-color: #0F0F0F;
+  background-color: #0f0f0f;
   color: white;
   font-weight: 500;
 }
 
+.like {
+  cursor: pointer;
+}
+
 .btns-div {
   margin-left: 12px;
+}
+
+.like.active {
+  background-color: #0f0f0f;
 }
 
 .like-btn {
@@ -455,7 +520,7 @@ ul.menu {
 
 .views-p {
   font-size: 14px;
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-weight: 500;
 }
 
@@ -563,7 +628,7 @@ ul.menu {
 }
 
 .profile-text {
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-size: 14px;
   margin-top: 2px;
 }
@@ -588,14 +653,14 @@ ul.menu {
 
 .reply-text {
   font-size: 12px;
-  color: #0F0F0F;
+  color: #0f0f0f;
   font-weight: 500;
   text-decoration: none;
 }
 
 .replies-92 {
   text-decoration: none;
-  color: #065FD4;
+  color: #065fd4;
 }
 
 .reply-icons {
@@ -674,4 +739,29 @@ body {
   background-color: transparent;
   border-radius: 18px;
   font-weight: 500;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
