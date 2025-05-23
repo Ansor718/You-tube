@@ -5,7 +5,7 @@ let id = params.get("id");
 let element = videoData.find((el) => el.id === Number(id));
 
 console.log(element);
-console.log(element.videoSrc);
+console.log(element.src); 
 
 wrapper.insertAdjacentHTML(
   "beforebegin",

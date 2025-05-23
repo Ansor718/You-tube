@@ -20,7 +20,7 @@ function youTube(arr) {
         <a href="./detail.html?id=${el.id}"><img class="hero__img" style="border-radius: 20px" width="400px" src="${el.thumbnail}" alt="" /></a>
 
         <div class="hero-div">  
-          <div>
+          <div class="vd">
             <img class="imghero" class="hero__profile-img" src="${el.channelPhoto}" alt="" />
           </div>
 
