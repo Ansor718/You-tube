@@ -85,3 +85,7 @@ closeBtn.onclick = () => (elModal.style.display = "none");
 window.onclick = (event) => {
   if (event.target === elModal) elModal.style.display = "none";
 };
+
+
+
+

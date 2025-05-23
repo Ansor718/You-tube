@@ -26,3 +26,9 @@ let like = document.querySelector(".like");
 like.addEventListener("click", function () {
   like.classList.toggle("active");
 });
+
+let subcribe = document.querySelector(".subscribe-btn");
+
+subcribe.addEventListener("click", function () {
+  subcribe.classList.toggle("ansor");
+});

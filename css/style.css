@@ -452,6 +452,11 @@ ul.menu {
   font-weight: 500;
 }
 
+.ansor {
+  background-color: white;
+  color: black;
+}
+
 .like {
   cursor: pointer;
 }
@@ -752,6 +757,11 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.relased-section {
+  display: flex;
   justify-content: center;
 }
 
