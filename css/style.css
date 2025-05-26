@@ -687,6 +687,11 @@ ul.menu {
   margin-bottom: 16px;
 }
 
+.videoHTML {
+  display: flex;
+  justify-content: space-between;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
