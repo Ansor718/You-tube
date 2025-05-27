@@ -5,6 +5,34 @@ let login = document.querySelector(".login");
 let modal = document.querySelector(".modal");
 let elClose = document.querySelector(".close");
 let modalContent = document.querySelector(".modal_content");
+let allCategory = document.querySelectorAll('.hero__right-list')
+
+allCategory.forEach(el => {
+  el.addEventListener('click', () => {
+
+    if (el.textContent === 'All') {
+      youTube(videoData)
+      
+    }else{
+ console.log(el.textContent);
+
+
+    let filterByCategory = videoData.filter(video => {
+
+      return video.category === el.textContent
+    }) 
+
+     youTube(filterByCategory);
+    }
+   
+
+
+   
+
+  })
+})
+
+
 
 elMenyu.addEventListener("click", function () {
   sideBar.classList.toggle("svag");
@@ -12,6 +40,7 @@ elMenyu.addEventListener("click", function () {
 });
 
 function youTube(arr) {
+  heroUl.innerHTML = "";
   arr.forEach((el) => {
     heroUl.insertAdjacentHTML(
       "beforeend",
@@ -57,3 +86,18 @@ function youTube(arr) {
 
 youTube(videoData);
 
+
+// function filterVideos(category) {
+//   const allVideos = document.querySelectorAll(".hero-li");
+
+//   allVideos.forEach((video) => {
+//     const title = video.querySelector("h4.hero-new-attack-h4").textContent.toLowerCase();
+
+//     const foundData = video.dataset.category; // videoga category ni saqlaymiz
+//     if (category === "All" || foundData === category) {
+//       video.style.display = "block";
+//     } else {
+//       video.style.display = "none";
+//     }
+//   });
+// }

@@ -20,3 +20,5 @@ let like = document.querySelector(".like");
 like.addEventListener("click", function () {
   like.classList.toggle("active");
 });
+
+

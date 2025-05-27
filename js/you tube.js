@@ -10,7 +10,7 @@ let videoData = [
     duration: "9:22",
     thumbnail: "thumbnails/ruxsora.avif",
     category: "Music",
-    src: "https://www .youtube.com/embed/8RBm0qKOmHY",
+    src: "https://youtu.be/_9IRw27rjAk",
   },
   {
     id: 2,
