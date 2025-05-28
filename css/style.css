@@ -692,6 +692,30 @@ ul.menu {
   justify-content: space-between;
 }
 
+.right-li {
+  display: flex;
+  gap: 8px;
+  margin-left: -10px;
+  margin-top: 8px;
+}
+
+.marques-text {
+  color: #606060;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+}
+
+.ceck {
+  margin-top: 4px;
+}
+
+.viewss-months {
+  font-size: 12px;
+  color: #606060;
+  margin-top: 1px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
